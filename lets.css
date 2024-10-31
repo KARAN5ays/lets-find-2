@@ -1,0 +1,345 @@
+/* for resetting or so ,it doesn't come in default*/
+*{
+    color: rgb(128, 123, 159);
+    /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 2px darkblue; */
+    margin: auto;
+    padding: 0;
+}
+body{ 
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 250vh;
+    background:url('.jpg') no-repeat;
+    background-size:cover;
+    background-position:center;
+    }
+.main{
+    width: 100%;
+    background:linear-gradient(to top,rgba(0,0,0,0.5))50%,rgba(0,0,0,0.5)50%,url(cook.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}   
+
+.logo{/*this is only for logo it will not effect img*/
+    width: 20px;
+    display: block;
+    position: relative;
+    down:200px;
+    padding-top: 70px;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 8px; */
+}
+
+.logo img{ /*for adjusting logo img*/
+    width: 100px;
+    position: relative;
+    bottom:140px;
+    padding-top: 60px;
+    border: 3px solid white ;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;/* this will display  the search bar on top-right;*/
+    position:relative;
+    
+}
+.nav-list{ /* FOR taking space */
+    width: 100%;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    bottom: 170px;
+    /background-color: black; */
+    align-items: center; /* this will place nav button in center*/
+    display: flex;
+} 
+
+.nav-list li{
+    list-style: none; /* this will remain li style to non means it will remove*/
+    color:black;
+    padding: 3px 8px;
+    background-color: orange;
+
+
+}
+
+.nav-list li a {
+    text-decoration: none;; /* this will remove the undeline from the nav bar*/
+    color:black;
+
+}k
+
+.nav-list li a:hover{ /* for selecting or changing color while selection nav button*/
+    text-decoration: none;
+    color:rgb(58, 14, 220);
+}
+
+.right-nav{
+    width: 60%;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+    right:340px;
+    
+}
+#location{
+    position: relative;
+    right:200px;
+}
+.btn.btn.sm{
+    position:relative;
+    
+}
+#location{
+    position: relative;
+    left:100px;
+}
+
+#search{ /* for editing in search box*/
+    
+    padding: 2px ;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 9px;
+}
+
+.content {
+    background:transparent;
+    text-align: left;
+    max-width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    /* background-color: whitesmoke; */
+    border-radius: 8px;
+    box-shadow: 1 6px 10px rgba(228, 19, 19, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid black; */
+    box-shadow: inset;
+
+}
+.btn-ys {
+padding: 0.2% 0.2% 0.2% 0.2% ;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+background-color: antiquewhite;
+text-transform: left;
+color: black;
+}
+.btn-ys:hover{
+    text-decoration: double;
+    background-color: burlywood;
+}
+
+.btn-no{
+    padding: 0.2% 0.2% 0.2% 0.2% ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: antiquewhite;
+    text-align: right;
+    color: black;
+}
+.btn-no:hover{
+    text-decoration: double;
+    background-color: burlywood;
+}
+
+.job-seek{
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+    /* text-decoration:; */
+}
+.job-seek h2{
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: gold;
+}
+.job-seek p{
+    font-size: 15px;
+    position: relative;
+    right:300px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.popup-window {
+    text-align: center;
+    position: relative;
+    left:50px;
+    bottom:200px;
+    padding: 80px;
+    /* background-color: aqua; */
+    border-radius: 10px;
+    /*border: 2px solid black;*/
+    margin: 5px 0;
+}
+.popup-window h4{
+    font-size: 15px;
+    color: black;
+    margin-bottom: 10px;
+}
+.cook{
+    display: relative;
+    position: relative;
+    bottom:200px;
+    left:300px;
+    text-align:bottom;
+    justify-content: left;
+
+}
+}
+.description{
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0,00,10px,rgba(0,0,0,0.1);
+}
+.description h3{
+    margin-bottom: 10px;
+    color: black;
+}
+.description p{
+    text-align: center;
+    text-justify: auto;
+    font-size: 16px;
+    color: black;
+
+}
+.description h2{
+    position:relative;
+    bottom:210px;
+    right:420px;
+}
+.social img{
+    max-width: 25px;
+    display:relative;
+    left:200px;
+    top:120px;
+    border-radius:5px ;
+}
+.social a{
+    display:relative;
+    left:300px;
+    top:150px;
+}
+.image img {
+    max-width: 20%;
+    position:relative;
+    bottom:200px;
+    right:200px;
+    height: 20;
+    border-radius: 50px;
+}
+.carpenter{
+    position: relative;
+    bottom:200px;
+    right:200px;
+}
+.imaa img{
+    max-width: 20%;
+    position: relative;
+    bottom:200px;
+    left:600px;
+    height: 20;
+    border-radius: 50px;   
+}
+.footer-links{
+    padding-bottom: 20px;
+    position: relative;
+    text-decoration: none;
+    top:200px;
+    text-align: center;
+    color:black;
+}
+.footer-links a{
+    text-decoration: none;
+}
+.popup{
+    display: none;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0,0,10px ,rgba(0,0,0,0.1);
+    z-index: 1000;
+    border-radius: 8px;
+    border: 3px solid black;
+}
+.popup input{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 70%;
+
+}
+.popup button:hover{
+    padding: 5px;
+    background-color: rgb(77, 153, 246) ;
+    border: none;
+}
+.contact{
+    position: relative;
+    top:70px;
+}
+.container{
+    position: relative;
+    top:50px;
+}
+contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #121212;
+    position: relative;
+    top:150px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: #f5f5f7;
+}
+
+/*DARKbackground for popup*/
+.popup-background{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(203, 73, 50); */
+    z-index: 999;
+    background-image: url(3.jpeg);
+}
+::-webkit-scrollbar{
+    width:15px;
+}
+::-webkit-scrollbar-track{
+    background-color: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: linear-gradient(#642bff,#ff22e6);
+}

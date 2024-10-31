@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<lang="en">
+<head>
+    <metacharset = "utf-8">
+    <metaname ="viewport" content ="width =  device-width,initial-scale=1.0">
+    
+        <!--this tag is used for creatiing or linking to next file-->
+        <link rel="stylesheet" href="lets.css">
+        <title> LET'S FIND</title>
+    </head>
+
+    <body>
+        <div class ="logo">
+            <img src ="logo.jpg.jpg" alt ="logo" ></div>
+        <nav class ="navbar"><!--lets create a class for navbar so we can do style in css later on-->
+            <UL class="nav-list"><!--class for ul--> 
+               
+                 <li><a href="# home">HOME</a> </li>
+                    <li><a href="# EMPLOYER-ZONE">EMPLOYER-ZONE</a></li>
+                    <!--THIS creates a  button like # home  in website-->
+                     <!-- here  we have given class for logo too. so we can manage its position , size later in css-->
+                <!--<div class ="logo">
+                    <img src ="logo.png" alt ="logo" ></div>-->
+                    <li><a href="#" id="LoginButton">LOGIN</a></li>
+                    <li><a href="# contact">CONTACT</a></li>
+            </UL>
+        </nav><br><!-- This is for creating navigation button-->              
+                    <!-- LETS CREATE A CLASS FOR SEARCH BAR-->
+                     <div class="right-nav">
+                        <!--for input any text inside search box-->
+                        <input type="text" name="search" id="search" placeholder="Enter Jobtitle or Company">
+                        <button class="btn btn-sm">SEARCH</button>
+                        <input type="text" name="location" id="location" placeholder="Enter Your Location">
+                        <button type="btn btn -pm">SEARCH</button>
+                </div><br>
+        
+               
+        <!-- for Job seek section-->
+        <div class="content">
+            <div class="job-seek">
+                <h2> Welcome Job seekers</h2><br>
+                <p><B>Are you looking for your next big career move? Whether you’re a recent graduate, changing careers, or simply searching for a new challenge, we’re here to help you find the right job that fits your skills, passion, and career goals.</B></p>
+            </div> 
+            <div class="popup-window"><!--popup window for job selection-->
+                <h4>Are you an Employer?</h4><br>
+                <button class="btn-ys">select for employers</button>
+                <h4>Are you searching for any kind of Job?</h4><br>
+                <button class="btn-no">select fot part time jobs</button><br>
+            </div>
+            <!--website description and link-->
+            <div class="description">
+                <h2><p>Description of available jobs </p></h2>
+                <div class="image"><img src="car.jpg.jpg"></div>
+                <div class="carpenter"><h3>carpenter</h3><p>
+                    Carpentry is a diverse field, and carpenters can work in various settings, including residential, commercial, and industrial construction. They play a vital role in bringing architectural designs to life, ensuring that structures are both functional and aesthetically pleasing
+                </p></div>
+                <div class="imaa"><img src="cook.jpg.jpg"></div>
+                <div class="cook"><h3>Cook</h3><p>A chef is a culinary professional responsible for preparing and presenting high-quality meals.they are responsible for preparing ingredients at an establishment that serves food, processing customer orders, producing meals and cleaning their workspace throughout the day to follow health and safety guidelines.</p></div>
+        
+            </div>
+            </div>
+            
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Local Workforce Platform</p>
+        </div>
+    </footer>
+
+        <!--footer section-->
+        <footer class="footer">
+            <div class="social"><a href="google.jpg"><img src="google.jpg"></a>
+                <a href="facebook.jpg"><img src="facebook.jpg"></a></div>
+            <div><b>Links</b></div>
+            <!--for login popup-->
+            <div class="popup-background" id="popupBackground"></div>
+            <div class="popup" id="loginpopup">
+                <h2>Login</h2>
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <button id="LoginSubmit">Login</button><br>
+                <p>Don't have an account?
+                    <a href="#">Create an account</a>
+                </p>
+            </div>
+           
+        </footer>
+        <div class="footer-links">
+            <a href="#"><b>For job seekers</b></a><br>
+            <a href="#"><b>For employers</b></a><br>
+            <a href="#"><b>About us</b></a><br>
+            <a href="#"><b>Contact us</b></a><br>
+            <a href="#"><b>Terms & Conditions</b></div> 
+        </div>
+        
+        <!--<script src="final.js"></script> -->  
+        <script>
+                const loginButton = document.getElementById("LoginButton");
+                const loginPopup = document.getElementById("loginpopup");
+                const popupBackground = document.getElementById("popupBackground");
+        
+                // Show the popup when login button is clicked
+                loginButton.addEventListener("click", function () {
+                    loginPopup.style.display = "block";
+                    popupBackground.style.display = "block";
+                    window.addEventListener("Click", function(){
+                        loginPopup.style.display = "none";
+                        popupBackground.style.display = "none";
+                    })
+                });
+        
+                // Hide the popup when background is clicked
+                popupBackground.addEventListener("click", function () {
+                    loginPopup.style.display = "none";
+                    popupBackground.style.display = "none";
+                });
+            </script> 
+    </body>
+    </html>
+    
